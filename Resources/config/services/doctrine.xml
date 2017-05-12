@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="miky_calendar.agenda_manager" class="Miky\Bundle\CalendarBundle\Doctrine\AgendaManager">
+            <argument type="service" id="doctrine.orm.entity_manager" />
+            <argument>%miky_calendar.model.agenda.class%</argument>
+        </service>
+        <service id="miky_calendar.event_manager" class="Miky\Bundle\CalendarBundle\Doctrine\EventManager">
+            <argument type="service" id="doctrine.orm.entity_manager" />
+            <argument>%miky_calendar.model.event.class%</argument>
+        </service>
+
+    </services>
+
+</container>

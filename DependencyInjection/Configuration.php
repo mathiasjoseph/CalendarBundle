@@ -19,6 +19,10 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('miky_calendar');
+        $rootNode
+            ->children()
+                ->scalarNode('event_class')->isRequired()->cannotBeEmpty()->end()
+                ->scalarNode('agenda_class')->isRequired()->cannotBeEmpty()->end();
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
