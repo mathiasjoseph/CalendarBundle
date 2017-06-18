@@ -3,10 +3,7 @@
 namespace Miky\Bundle\CalendarBundle;
 
 use Doctrine\Bundle\DoctrineBundle\DependencyInjection\Compiler\DoctrineOrmMappingsPass;
-use Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator;
-use Doctrine\ORM\Mapping\Driver\XmlDriver;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class MikyCalendarBundle extends Bundle
