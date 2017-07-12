@@ -9,9 +9,9 @@
 namespace Miky\Bundle\CalendarBundle\Doctrine;
 
 
-use Miky\Bundle\CoreBundle\Doctrine\AbstractObjectManager;
+use Miky\Bundle\CoreBundle\Doctrine\BaseEntityManager;
 
-class AgendaManager extends AbstractObjectManager
+class AgendaManager extends BaseEntityManager
 {
 
 }
